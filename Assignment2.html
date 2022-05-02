@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="dadarao" content="width=device-width, initial-scale=1.0">
+    <title>www.ABshop.com</title>
+    <link rel="icon" href="C:\Users\lenovo\Desktop\logo2.jpg.jpeg" type="image">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --main-bg-color: brown;
+        }
+
+        header {
+
+            background: var(--main-bg-color);
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 70px;
+            height: 40px;
+            padding: 0 20px;
+        }
+
+        nav ul {
+            height: 60px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 23px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: white;
+            font-weight: bolder;
+
+        }
+
+        .search {
+            /* padding: 0 12px; */
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 0 12px;
+            width: 400px;
+            height: 23px;
+            border-radius: 6px;
+            margin: 15px;
+        }
+
+        .btn {
+            height: 28px;
+            width: 60px;
+            background: var(--main-bg-color);
+            border: solid white;
+
+        }
+
+        .btn a {
+            font-style: bolder;
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            min-height: calc(100vh - 60px - 5vh);
+
+        }
+
+        .slider img {
+            width: 85vw;
+            height: 300px;
+            margin: 12px auto;
+            align-items: center;
+            display: flex;
+        }
+        .cards{
+            justify-content: center;
+            display: flex;
+
+
+        }
+        .card {
+            margin: auto;
+            max-width: 91vw;
+            /* background: rgb(120, 19, 64); */
+        }
+
+        .card-item {
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 15px;
+        }
+
+        .card h2 {
+            font-style: italic;
+        }
+
+        .line {
+            margin: 10px 25px;
+        }
+
+        .m1 {
+            margin: 15px 0;
+        }
+
+        .m2 {
+            margin: 5px 0;
+        }
+
+        .center {
+            display: flex;
+            text-align: center;
+        }
+
+        .text-center {
+            justify-content: center;
+            display: flex;
+            color: white;
+            align-items: center;
+            font-style: italic;
+            height: 5vh;
+            background: var(--main-bg-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="C:\Users\lenovo\Desktop\WhatsApp Image 2022-03-13 at 11.22.25 AM.jpeg" alt="">
+            </div>
+            <ul>
+                <li> <a href="home.html">HOME</a></li>
+                <li> <a href="ORDER.html">ORDER</a></li>
+                <li><a href="ACCOUNT.html">ACCOUNT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" placeholder=" search here">
+                <!-- <a href=""></a> -->
+                <button class="btn"><a href="input.html">SEARCH</a></button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzMDEwMDU4Mnx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+
+            </div>
+            
+            <div class="card">
+                <h2 class="m1">join the badminton fun</h2>
+                <div class="cards">
+                <div class="card-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR6dRrMyaUHxvsqIPAkKXY_ZIX5EWzAIEojpABqdX_yktsmIBguwyDIUqdQMggx&usqp=CAc"
+                        alt="">
+                    <div clsss="line">
+                        <p class="center m2">badminton bat</p>
+                        <p class="center m2">min 20% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="data:image/png;base64,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"
+                        alt="">
+                    <div clsss="line">
+                        <p class="center m2">shoes</p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSl5ixSXi3EIU-Wjahy8uY-9Ip1Eib5ePQn24rRF1LKIIgC3fpsWv0s7Oq8u_DzaAU5vqfJHXVC&usqp=CAc"
+                        alt="" height="187">
+                    <div clsss="line">
+                        <p class="center m2">sprite</p>
+                        <p class="center m2">min 10% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRA-MpPdvn3Yn53Fp_bNk6s_XJD8SfyZuRETSQ8zODdYxWClD_S0iGjJsl364WmEBobpLKoCxJc-sH-YuTRFb_Mgut1hkriU2IXOoZ7vrzTjSdHlFwezBqVHA&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">shoes</p>
+                        <p class="center m2">min 40% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQgME0030hWJ0f1-uhpWdOfc6iYd9y8oZNFxozl8s3ZOWWtVHCvlA4cE9Mptc2bPY0rb7rkLZjC6pBdcS7jHY8O2VGZ8fP_KqSIONAwRiSaLKikhsiCkYgkCg&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">t shirt</p>
+                        <p class="center m2">min 15% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTDo_MtNtPjvBKjEQkn10g-HTlHdMz_9Egukljn5oaE_4WIopT7tFuli4IEbWPIXP6N2ixZEhVe01lZo9QlIlczqEXMe7zhYc6OGjdvI7Cu&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">sports</p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTBpdDln70Puk0C9XRzb8vWEB4bPd5N79cTJSPUay6KKRfO6pbSepDH8XdFozYYTFj7tUbZTgs1yKMif53yjjKn4OiuQnbrXXwVacimFMo&usqp=CAE"
+                        alt="" width="142" height="187">
+                    <div clsss="line">
+                        <p class="center m2">Sport</p>
+                        <p class="center m2">min 20% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <h2 class="m1">Farniture bestsellers</h2>
+                <div class="cards">
+                <div class="card-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSgumegA5u_UNV9eboUHqaWN9aiS5WZoSzXZN8fZ0D9fpWhh0EMpF3-zWMjEZC3GOEAaTXxkU4_eH007-gpy2Pkchth-ML_jryAm6U65KDA7HaxLtIhUb_xWcw&usqp=CAE"
+                        alt="" width="142" height="187">
+                    <div clsss="line">
+                        <p class="center m2">chair</p>
+                        <p class="center m2">min 20% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT0gH1RQdoeSlIGpUpfBSzGtHUMPkx_jheOMM-4ZW2WBKdl9sEL40iq2q4frCO__40kmeqlJIsdkTjx85l9mmNmeYcrgoVsquRrGLQzzbY&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">sofa</p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTHX8DOvqTwdEGB-obIS1SgTb4nMD6VzQe5dQmpZS6v4gh2ZsQEhmO2-opwSJBZ-GgHzo_Gp1-tkoznCd6FWuD5MdZAvHf2Yg&usqp=CAE"
+                        alt="" width="80.6" height="187">
+                    <div clsss="line">
+                        <p class="center m2">cabinet</p>
+                        <p class="center m2">min 10% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQoQNZlp7HpTXu5SAna3sRkEHZ0jdz0yQ9hDkMS0IT3YGiyo2ibkNkeRleRYdtHN6YRatYA_CeQSdPRzkwmSI33Irod6LMzxpZBqPmd_mLh&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">sofa sets</p>
+                        <p class="center m2">min 40% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS9Dfja0-Hdrl_I1qGAt63kcglHFhn2v8KAlcz4ejHVxu6Hvy3Dg6FHIXOYgvnnfa2oR6cYKpOWKB-4oemY8Naq8ReiV6QSHgjmABA0GCXjvO0GH_U6sryo&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">chair</p>
+                        <p class="center m2">min 15% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRMwgwD3OFqCKR9Bi3EzI3NMuGJ9xU4m1AJ6A-7NJv8iGGt5cBvXLgmkwcE8aT3zdMXGjU_sWJBdAj0t5dje2cS-IMpMM7RmSZsIU06aPQ&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">Room sets</p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQdYmsiBHYHuHZgQ6nkFS9aHmJb-aSA9oyf4U2ERkCFQE5X20EYwMqTb7UYI3Ui_hnmbH_AWGpNJ2bx6R1H-jgRZZlsZx-CHJdTi1M52x4&usqp=CAE"
+                        alt="" width="142" height="187">
+                    <div clsss="line">
+                        <p class="center m2">special sofa sets</p>
+                        <p class="center m2">min 20% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <h2 class="m1">Camera phone</h2>
+                <div class="cards">
+                <div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQnQfzWYI6f0yYRRKmRhD2589JAOUybeDa4qVHTu5l3kklO-TCGotHsfIUCVCj51s7Xf4L22AzvZEF-9E69r7dosD0cvhmGid3Ktyq-pzLJMTvIOIdmoEZsMw&usqp=CAE"
+                        alt="" width="142" height="187">
+                    <div clsss="line">
+                        <p class="center m2">oppo reno 7</p>
+                        <p class="center m2">min 20% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQTHd_U7Vs01jQXkMRnFpqPZWi9Mv4s89BN_qFtjsnyJGFYH8EudhvZgBAtkhLEoUt12Fjdp_0n0Zhws6xHBVJKyXtp_-wdrS7LWJLEIKNa021n8rHQm0Es&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">Samsung F42</p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQA-5KUL90jpic261IaZEqp1zMOxBPZptjfMcQ3lSZwCl7MbMGuWdViAtbb3kRkCWGfdOmSXZ-CHrI0shOb34-KUVtZXc2P8KEsTlPpePY&usqp=CAE"
+                        alt="" width="80.6" height="187">
+                    <div clsss="line">
+                        <p class="center m2">Oppo reno 6</p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTaSeJLFU_OUmJWNZzUpxY6LIcorcBzQmLfehPEf9adS_3B3CEPeUvh44fhyBAHFpZbjBIaKHMkgWAJ9Wh6G6pCQ9iZREtRTUknHBjGkH2v0wXmLD0Vx9aRVg&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">OnePlus 9 pro</p>
+                        <p class="center m2">min 45% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR6oHSGwvUHMW55SesGQ4tChGK2UjDk2o3h1iZd6fjMV-hMyqfBxXZYAVdAX4IChJqVH95ow29JfMWQ59RZXhZiS6g3T3-JJakvSLzbJpUIujX9DYM7EKu2&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">Redmi note 10 pro</p>
+                        <p class="center m2">min 50% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTtD6Ak00BIcwMT0Auxn9Alq0h0R0YvXG4uKTUz8y5P3GwOqT_y7paWyF6iCsJuCCB16kbY8rOjJYXiu6rrLjWfUDod5pGdC9HiVJapyOL_2jsWNzgGpuuMaw&usqp=CAE"
+                        alt="" width="167" height="167">
+                    <div clsss="line">
+                        <p class="center m2">iQoo z3 5g </p>
+                        <p class="center m2">min 30% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div><div class="card-item">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTZ0BAKl8aAMRrPac956NN8mcnmXV-ycnbm_1hTXmIA5hWUeRvVMnW-GWZwYzHGnJE87apxjwxxVSGRvAcyaTVgzk_Y4A9iKEq07K4kn4v8upGNydtxI6fG&usqp=CAE"
+                        alt="" width="142" height="187">
+                    <div clsss="line">
+                        <p class="center m2">iphone 11</p>
+                        <p class="center m2">min 40% off</p>
+                        <p class="center m2">Grab now? </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="text-center">copyright@2022-----ABshop-----</p>
+    </footer>
+</body>
+
+</html>
